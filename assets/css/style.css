@@ -151,11 +151,40 @@ h1 img {float: right;}
   align-content: flex-end;
 }
 
-.icon-list .twitter::before {content: "\f081"; font-weight: 300px;}
-.icon-list .youtube::before {content: "\f167";}
-.icon-list .wifi::before {content: "\f1eb";}
-.icon-list .facebook::before {content: "\f082";}
-.icon-list .google::before {content: "\f0d4";}
+.icon-list .twitter::before {
+  content: "\f081"; 
+  color: #C0C0C2;
+  font-family: "FontAwesome";
+  font-weight: 300px;
+}
+
+.icon-list .youtube::before {
+  content: "\f167"; 
+  color: #C0C0C2;
+  font-family: "FontAwesome";
+  font-weight: 300px;
+}
+
+.icon-list .wifi::before {
+  content: "\f1eb";
+  color: #C0C0C2;
+  font-family: "FontAwesome";
+  font-weight: 300px;
+}
+
+.icon-list .facebook::before {
+  content: "\f082";
+  color: #C0C0C2;
+  font-family: "FontAwesome";
+  font-weight: 300px;
+}
+
+.icon-list .google::before {
+  content: "\f0d4";
+  color: #C0C0C2;
+  font-family: "FontAwesome";
+  font-weight: 300px;
+}
 
 
 
@@ -169,11 +198,232 @@ h1 img {float: right;}
   main styling starts here
 =================================*/
 
+.banner {
+  width: 100%;
+  background: url('https://via.placeholder.com/1260x465.png');
+  height: 465px;
+  position: relative;
+}
 
+.banner .wrapper {
+  width: 45%;
+  margin: 0 auto;
+}
 
+.banner div {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 98%;
+  left: 23%;
+  background-color: #DC6226;
+  text-align: center;
+  transform: translate(-50px, -50px);
+}
 
+.banner h2 {
+  margin: 20px 53px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
+.banner h2::before {
+  content: "\f053"; 
+  position: absolute;
+  top: 33px;
+  left: 3%;
+  color: #fff;
+  cursor: pointer;
+}
 
+.banner h2::after {
+  content: "\f054";
+  position: absolute;
+  top: 33px;
+  right: 3%;
+  color: #fff;
+}
+
+.client {margin: 75px 0;}
+.client .wrapper {width: 89%;}
+
+.client h2,
+.advice h2 {
+  color: #404B52;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.client ul {
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+}
+
+.client li {
+  flex-basis: 24%;
+  margin-left: calc(2% - 5px);
+}
+
+.client li:first-child {margin-left: 0;}
+
+.client ul figure {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.client figure img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.client-heading {
+  width: 36%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: #404B59;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.client-text {
+  width: 82%;
+  margin: 0 auto;
+  color: #C0C0C2;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.client-btn {
+  width: 30%;
+  padding: 15px 20px;
+  margin-left: 28%;
+  border: 2px solid #C0C0C2;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.client-btn:hover {
+  background-color: #404B59;
+  color: #fff;
+}
+
+.advice {background-color: #E7EFF2;}
+
+.advice .wrapper {
+  width: 92%;
+  margin: 0 auto;
+  padding: 75px 0;
+}
+
+.advice h2 {margin-bottom: 30px;}
+
+.advice p {
+  margin-bottom: 60px;
+  color: #404B52;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.advice ul {
+  width: 100%;
+  display: flex;
+}
+
+.advice-list {
+  width: 32%;
+  margin-left: 2%;
+  background-color: #fff;
+}
+
+.advice-list:first-child {margin-left: 0;}
+
+.advice-list figure {
+  width: 92%;
+  margin: 13px auto;
+}
+
+.advice-list img {width: 100%}
+
+.advice-div {
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.advice-heading {
+  margin-bottom: 15px;
+  color: #C75B3D;
+  font-size: 25px;
+  font-weight: bold ;
+  text-transform: capitalize;
+}
+
+.advice-div p {
+  width: 89%;
+  margin: 0 auto;
+  color: #404B59;
+  font-size: 13px;   
+}
+
+.advice-div p::after {
+  content: "\f35a";
+  font-family: "Font Awesome";
+  display: inline-block;
+  vertical-align: top;
+}
+
+section .wrapper {
+  max-width: 2000px;
+  width: 100%;
+}
+
+.solution {
+  width: 50%;
+  margin: 0 auto;
+  display: inline-block;
+  background-color: #DC6327;
+}
+
+.solution h3 {
+  margin: 60px 10% 30px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.solution ul {margin-bottom: 20px;}
+
+.solution ul li {
+  margin: 0 10% 10px;
+  display: block;
+  color: #fff;
+  font-family: serif;
+  font-size: 17px;
+}
+
+.solution ul li::before {
+  content: ;
+}
+
+.money-btn {
+  width: 11%;
+  margin: 0 0 30px 10%;
+  padding: 15px 20px;
+  border: 2px solid #fff;
+  color: #fff;
+
+}
 
 
 /*=================================
