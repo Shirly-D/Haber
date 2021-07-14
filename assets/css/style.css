@@ -118,18 +118,22 @@ h1 {
 h1 a {text-indent: -9999px;}
 h1 img {float: right;}
 
+nav {
+  width: calc(100% - 270px);
+  float: right;
+  margin-top: 35px
+}
+
 .nav-list li {
   flex-basis: 17%;
+  font-weight: bold;
   text-align: center;
   text-transform: uppercase;
 }
 
 .nav-list {
-  width: 44%;
-  display: flex;
-  transform: translate(-50px, -50px);
-  position: absolute;
-  left: 30%;
+  width: 60%;
+  display: inline-flex;
 }
 
 .nav-list a {
@@ -146,52 +150,60 @@ h1 img {float: right;}
 }
 
 .icon-list {
-  width: 40%;
-  display: flex;
-  align-content: flex-end;
+  width: 39%;
+  display: inline-flex;
+  justify-content: flex-end;
 }
-/* 
-.icon-list li {
-  text-indent: -9999px;
-} */
 
 .icon-list li {
-  flex-basis: 4%;
+  flex-basis: 10%;
+}
+
+.icon-list a {
+  width: 20px;
+  height: 20px;
+  float: right;
+  text-indent: -99999px;
+}
+
+.icon-list a::before {
+  text-indent: 0;
+  float: right;
 }
 
 .icon-list .twitter::before {
   content: "\f081"; 
   color: #C0C0C2;
   font-family: "FontAwesome";
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .icon-list .youtube::before {
   content: "\f167"; 
   color: #C0C0C2;
   font-family: "FontAwesome";
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .icon-list .wifi::before {
   content: "\f1eb";
   color: #C0C0C2;
   font-family: "FontAwesome";
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .icon-list .facebook::before {
   content: "\f082";
   color: #C0C0C2;
   font-family: "FontAwesome";
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .icon-list .google::before {
   content: "\f0d4";
   color: #C0C0C2;
   font-family: "FontAwesome";
-  font-size: 20px;
+  font-size: 30px;
 }
 
 
@@ -238,20 +250,26 @@ h1 img {float: right;}
 }
 
 .banner h2::before {
-  content: "\f053"; 
   position: absolute;
-  top: 33px;
+  top: 35px;
   left: 3%;
+  content: "\f053"; 
   color: #fff;
   cursor: pointer;
+  font-family: "FontAwesome";
+  font-size: 33px;  
 }
 
 .banner h2::after {
-  content: "\f054";
   position: absolute;
-  top: 33px;
+  top: 35px;
   right: 3%;
+  content: "\f054";
   color: #fff;
+  cursor: pointer;
+  font-family: "FontAwesome";
+  font-size: 33px; 
+  
 }
 
 .client {margin: 75px 0;}
@@ -384,16 +402,15 @@ h1 img {float: right;}
 }
 
 .advice-div p::after {
-  content: "\f35a";
-  font-family: "Font Awesome";
-  display: inline-block;
-  vertical-align: top;
+  content: "\f18e";
+  font-family: "FontAwesome";
+  font-size: 20px;
 }
 
-section .wrapper {
+.sol-section .wrapper {
   max-width: 2000px;
   width: 100%;
-  /* display: flex; */
+  display: flex;
 }
 
 .solution {
@@ -486,21 +503,122 @@ section .wrapper {
 }
 
 .footer-list li {
-  flex-basis: 17%;
+  flex-basis: 34%;
   margin: 90px auto;
 }
 
 .footer-list li a {
+  width: 50%;
+  margin-left: 5%;
   color: #fff;
   text-transform: uppercase;
 }
 
+.footer-list li::before {
+  border: 10px solid #6D717C;
+  border-radius: 50%;
+  background-color: #DC6327;
+  color: #fff;
+  font-family: "FontAwesome";
+  font-size: 50px;
+}
+
 .footer-list li:first-child::before {
   content: "\f041";
-  color: #DC6226;
-  font-family: "FontAwesome";
-  font-size: 70px;
+  padding: 5px 20px;
 }
+
+.footer-list li:nth-child(2)::before {
+  content: "\f0e0";
+  padding: 10px 15px;
+}
+
+.footer-list li:last-child::before {
+  content: "\f095";
+  padding: 10px 15px;
+}
+
+.footer-bottom {
+  padding: 80px 60px;
+  background-color: #434C50;
+}
+
+.footer-bottom .wrapper {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+}
+
+.footer-bottom p {color: #fff;}
+.footer-bottom div {flex-basis: 59%;}
+
+.footer-bottom p a{
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer-icon .tumblr::before {
+  content: "\f174"; 
+  color: #DC6327;
+  font-family: "FontAwesome";
+  font-size: 20px;
+}
+
+.footer-icon .twitter::before {
+  content: "\f081"; 
+  color: #DC6327;
+  font-family: "FontAwesome";
+  font-size: 20px;
+}
+
+.footer-icon .youtube::before {
+  content: "\f167"; 
+  color: #DC6327;
+  font-family: "FontAwesome";
+  font-size: 20px;
+}
+
+.footer-icon .wifi::before {
+  content: "\f1eb";
+  color: #DC6327;
+  font-family: "FontAwesome";
+  font-size: 20px;
+}
+
+.footer-icon .facebook::before {
+  content: "\f082";
+  color: #DC6327;
+  font-family: "FontAwesome";
+  font-size: 20px;
+}
+
+.footer-icon .google::before {
+  content: "\f0d4";
+  color: #DC6327;
+  font-family: "FontAwesome";
+  font-size: 20px;
+}
+
+.footer-bottom figure {flex-basis: 41%;}
+.footer-bottom figure img {width: 100%;}
+
+.footer-icon a {
+  width: 20px;
+  height: 20px;
+  float: right;
+  text-indent: -99999px;
+}
+
+.footer-icon a::before {
+  text-indent: 0;
+  float: right;
+
+
+
+
+
 
 
 
