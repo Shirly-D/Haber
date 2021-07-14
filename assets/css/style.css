@@ -109,11 +109,27 @@ li {
 
 header {background-color: #404B53;}
 header .wrapper {width: 92%;}
+
+h1 {
+  width: 17%;
+  display: inline-block;
+}
+
 h1 a {text-indent: -9999px;}
 h1 img {float: right;}
 
 .nav-list li {
+  flex-basis: 17%;
+  text-align: center;
   text-transform: uppercase;
+}
+
+.nav-list {
+  width: 44%;
+  display: flex;
+  transform: translate(-50px, -50px);
+  position: absolute;
+  left: 30%;
 }
 
 .nav-list a {
@@ -121,10 +137,25 @@ h1 img {float: right;}
   font-size: 15px;
 }
 
+.nav-list .active {color: #C75B3D;}
+.nav-list .active:hover {color: #fff;}
+
 .nav-list a:hover {
   color: #C75B3D;
   transition: .2s;
 }
+
+.icon-list {
+  width: 40%;
+  display: flex;
+  align-content: flex-end;
+}
+
+.icon-list .twitter::before {content: "\f081"; font-weight: 300px;}
+.icon-list .youtube::before {content: "\f167";}
+.icon-list .wifi::before {content: "\f1eb";}
+.icon-list .facebook::before {content: "\f082";}
+.icon-list .google::before {content: "\f0d4";}
 
 
 
