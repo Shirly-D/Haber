@@ -618,14 +618,7 @@ nav {
 .footer-icon a::before {
   text-indent: 0;
   float: right;
-
-
-
-
-
-
-
-
+}
 
 
  /*=================================
@@ -634,8 +627,7 @@ nav {
 
 /*media query starts*/
 /*media query for 995px starts here*/
+
 @media only screen and (max-width: 995px) {
-
-
 
 }  
