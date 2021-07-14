@@ -150,40 +150,48 @@ h1 img {float: right;}
   display: flex;
   align-content: flex-end;
 }
+/* 
+.icon-list li {
+  text-indent: -9999px;
+} */
+
+.icon-list li {
+  flex-basis: 4%;
+}
 
 .icon-list .twitter::before {
   content: "\f081"; 
   color: #C0C0C2;
   font-family: "FontAwesome";
-  font-weight: 300px;
+  font-size: 20px;
 }
 
 .icon-list .youtube::before {
   content: "\f167"; 
   color: #C0C0C2;
   font-family: "FontAwesome";
-  font-weight: 300px;
+  font-size: 20px;
 }
 
 .icon-list .wifi::before {
   content: "\f1eb";
   color: #C0C0C2;
   font-family: "FontAwesome";
-  font-weight: 300px;
+  font-size: 20px;
 }
 
 .icon-list .facebook::before {
   content: "\f082";
   color: #C0C0C2;
   font-family: "FontAwesome";
-  font-weight: 300px;
+  font-size: 20px;
 }
 
 .icon-list .google::before {
   content: "\f0d4";
   color: #C0C0C2;
   font-family: "FontAwesome";
-  font-weight: 300px;
+  font-size: 20px;
 }
 
 
@@ -385,10 +393,11 @@ h1 img {float: right;}
 section .wrapper {
   max-width: 2000px;
   width: 100%;
+  /* display: flex; */
 }
 
 .solution {
-  width: 50%;
+  flex-basis: 50%;
   margin: 0 auto;
   display: inline-block;
   background-color: #DC6327;
@@ -402,18 +411,21 @@ section .wrapper {
   text-transform: capitalize;
 }
 
-.solution ul {margin-bottom: 20px;}
-
-.solution ul li {
-  margin: 0 10% 10px;
+.solution ul li,
+.money ul li {
+  margin: 0 10% 19px;
   display: block;
   color: #fff;
   font-family: serif;
   font-size: 17px;
 }
 
-.solution ul li::before {
-  content: ;
+.solution ul li::before,
+.money ul li::before {
+  margin-right: 2%;
+  content: "\f013";
+  color: #fff;
+  font-family: "FontAwesome";
 }
 
 .money-btn {
@@ -422,7 +434,38 @@ section .wrapper {
   padding: 15px 20px;
   border: 2px solid #fff;
   color: #fff;
+  text-transform: capitalize;
+}
 
+.money-btn:hover {
+  background-color: #C0C0C2;
+  color: #E7EFF2;
+}
+
+.money {
+  flex-basis: calc(50% - 1px);
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #404B51;
+}
+
+.money h3 {
+  margin: 60px 10% 30px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.money h3 span {text-transform: lowercase;}
+
+.money p {
+  margin: 0 10%;
+  color: #fff;
+  font-family: serif;
+  font-size: 17px;
+  margin-bottom: 30px;
 }
 
 
@@ -434,7 +477,30 @@ section .wrapper {
   footer styling starts here
 =================================*/ 
 
+.footer-top {background-color: #515C62;}
+.footer-top .wrapper {width: 92%;}
 
+.footer-list {
+  width: 100%;
+  display: flex;
+}
+
+.footer-list li {
+  flex-basis: 17%;
+  margin: 90px auto;
+}
+
+.footer-list li a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer-list li:first-child::before {
+  content: "\f041";
+  color: #DC6226;
+  font-family: "FontAwesome";
+  font-size: 70px;
+}
 
 
 
