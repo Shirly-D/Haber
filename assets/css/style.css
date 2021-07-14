@@ -173,35 +173,35 @@ nav {
 
 .icon-list .twitter::before {
   content: "\f081"; 
-  color: #C0C0C2;
+  color: #808C94;
   font-family: "FontAwesome";
   font-size: 30px;
 }
 
 .icon-list .youtube::before {
   content: "\f167"; 
-  color: #C0C0C2;
+  color: #808C94;
   font-family: "FontAwesome";
   font-size: 30px;
 }
 
 .icon-list .wifi::before {
   content: "\f1eb";
-  color: #C0C0C2;
+  color: #808C94;
   font-family: "FontAwesome";
   font-size: 30px;
 }
 
 .icon-list .facebook::before {
   content: "\f082";
-  color: #C0C0C2;
+  color: #808C94;
   font-family: "FontAwesome";
   font-size: 30px;
 }
 
 .icon-list .google::before {
   content: "\f0d4";
-  color: #C0C0C2;
+  color: #808C94;
   font-family: "FontAwesome";
   font-size: 30px;
 }
@@ -382,7 +382,8 @@ nav {
 
 .advice-div {
   width: 80%;
-  margin: 40px auto;
+  margin: 50px auto;
+  position: relative;
   text-align: center;
 }
 
@@ -401,7 +402,10 @@ nav {
   font-size: 13px;   
 }
 
-.advice-div p::after {
+.advice-div::after {
+  margin-top: 11px;
+  position: absolute;
+  top: 109px;
   content: "\f18e";
   font-family: "FontAwesome";
   font-size: 20px;
