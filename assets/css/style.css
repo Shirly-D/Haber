@@ -234,11 +234,11 @@ nav {
   width: 100%;
   margin: 0 auto;
   position: absolute;
-  top: 98%;
-  left: 23%;
+  top: 88%;
+  left: 50%;
   background-color: #DC6226;
   text-align: center;
-  transform: translate(-50px, -50px);
+  transform: translate(-50%, -50%);
 }
 
 .banner h2 {
